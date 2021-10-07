@@ -18,7 +18,6 @@ class VC_Login: UIViewController {
         super.viewDidLoad()
         activityIndicator.stopAnimating()
         activityIndicator.isHidden = true
-        initializeHideKeyboard()
 }
     
     @IBAction func loginAction(_ sender: Any) {
@@ -32,11 +31,15 @@ class VC_Login: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         navigationController?.setNavigationBarHidden(true, animated: animated)
+        subscribeToNotification(UIResponder.keyboardWillShowNotification, selector: #selector(keyboardWillShow))
+        subscribeToNotification(UIResponder.keyboardWillHideNotification, selector: #selector(keyboardWillHide))
+        initializeHideKeyboard()
     }
 
     override func viewWillDisappear(_ animated: Bool) {
         super.viewWillDisappear(animated)
         navigationController?.setNavigationBarHidden(false, animated: animated)
+        unsubscribeFromAllNotifications()
     }
 }
 
@@ -51,5 +54,23 @@ extension VC_Login {
     
     @objc func dismissMyKeyboard(){
         view.endEditing(true)
+    }
+    
+    func subscribeToNotification(_ notification: NSNotification.Name, selector: Selector) {
+        NotificationCenter.default.addObserver(self, selector: selector, name: notification, object: nil)
+    }
+        
+    func unsubscribeFromAllNotifications() {
+        NotificationCenter.default.removeObserver(self)
+    }
+    
+    @objc func keyboardWillShow(notification: NSNotification) {
+        centerConstraint.constant = -40
+        view.setNeedsDisplay()
+    }
+    
+    @objc func keyboardWillHide(notification: NSNotification) {
+        centerConstraint.constant = 0
+        view.setNeedsDisplay()
     }
 }

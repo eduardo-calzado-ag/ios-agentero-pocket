@@ -26,5 +26,4 @@ class Cell_Appointment: UITableViewCell {
         cell_view.layer.shadowOpacity = 0.1
         cell_view.layer.shadowRadius = 5.0
     }
-    
 }

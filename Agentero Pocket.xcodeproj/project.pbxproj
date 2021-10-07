@@ -16,7 +16,7 @@
 		5B2929C3270DFAE9001A4E97 /* TC_Main.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2929C2270DFAE9001A4E97 /* TC_Main.swift */; };
 		5B2929C5270DFBC2001A4E97 /* VC_Appointments.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2929C4270DFBC2001A4E97 /* VC_Appointments.swift */; };
 		5B2929C9270DFBEE001A4E97 /* VC_Commissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2929C8270DFBEE001A4E97 /* VC_Commissions.swift */; };
-		5B2929CB270DFC80001A4E97 /* VC_QuoteProposal.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2929CA270DFC80001A4E97 /* VC_QuoteProposal.swift */; };
+		5B2929CB270DFC80001A4E97 /* VC_Quotes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2929CA270DFC80001A4E97 /* VC_Quotes.swift */; };
 		5B2929CD270DFD3A001A4E97 /* VC_Home.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B2929CC270DFD3A001A4E97 /* VC_Home.swift */; };
 		5B344823270EE36B0080B33B /* VC_Account.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B344822270EE36B0080B33B /* VC_Account.swift */; };
 		5B344827270EF9A20080B33B /* Cell_Commissions.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B344826270EF9A20080B33B /* Cell_Commissions.swift */; };
@@ -24,6 +24,8 @@
 		5B34482B270EFF8F0080B33B /* O_Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34482A270EFF8F0080B33B /* O_Appointment.swift */; };
 		5B34482D270F00C60080B33B /* Cell_Appointment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B34482C270F00C60080B33B /* Cell_Appointment.swift */; };
 		5B344831270F15D00080B33B /* VC_Settings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B344830270F15D00080B33B /* VC_Settings.swift */; };
+		5B344833270F3F2E0080B33B /* O_Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B344832270F3F2E0080B33B /* O_Quote.swift */; };
+		5B344835270F3F660080B33B /* Cell_Quote.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5B344834270F3F660080B33B /* Cell_Quote.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -38,7 +40,7 @@
 		5B2929C2270DFAE9001A4E97 /* TC_Main.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TC_Main.swift; sourceTree = "<group>"; };
 		5B2929C4270DFBC2001A4E97 /* VC_Appointments.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Appointments.swift; sourceTree = "<group>"; };
 		5B2929C8270DFBEE001A4E97 /* VC_Commissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Commissions.swift; sourceTree = "<group>"; };
-		5B2929CA270DFC80001A4E97 /* VC_QuoteProposal.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_QuoteProposal.swift; sourceTree = "<group>"; };
+		5B2929CA270DFC80001A4E97 /* VC_Quotes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Quotes.swift; sourceTree = "<group>"; };
 		5B2929CC270DFD3A001A4E97 /* VC_Home.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Home.swift; sourceTree = "<group>"; };
 		5B344822270EE36B0080B33B /* VC_Account.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Account.swift; sourceTree = "<group>"; };
 		5B344826270EF9A20080B33B /* Cell_Commissions.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell_Commissions.swift; sourceTree = "<group>"; };
@@ -46,6 +48,8 @@
 		5B34482A270EFF8F0080B33B /* O_Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = O_Appointment.swift; sourceTree = "<group>"; };
 		5B34482C270F00C60080B33B /* Cell_Appointment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell_Appointment.swift; sourceTree = "<group>"; };
 		5B344830270F15D00080B33B /* VC_Settings.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VC_Settings.swift; sourceTree = "<group>"; };
+		5B344832270F3F2E0080B33B /* O_Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = O_Quote.swift; sourceTree = "<group>"; };
+		5B344834270F3F660080B33B /* Cell_Quote.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Cell_Quote.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +85,7 @@
 				5B29298C270DF204001A4E97 /* AppDelegate.swift */,
 				5B2929C0270DF880001A4E97 /* SceneDelegate.swift */,
 				5B344828270EFA490080B33B /* O_Commission.swift */,
+				5B344832270F3F2E0080B33B /* O_Quote.swift */,
 				5B34482A270EFF8F0080B33B /* O_Appointment.swift */,
 				5B292990270DF204001A4E97 /* VC_Login.swift */,
 				5B2929C2270DFAE9001A4E97 /* TC_Main.swift */,
@@ -88,10 +93,11 @@
 				5B344822270EE36B0080B33B /* VC_Account.swift */,
 				5B344830270F15D00080B33B /* VC_Settings.swift */,
 				5B2929C4270DFBC2001A4E97 /* VC_Appointments.swift */,
-				5B2929CA270DFC80001A4E97 /* VC_QuoteProposal.swift */,
+				5B2929CA270DFC80001A4E97 /* VC_Quotes.swift */,
 				5B2929C8270DFBEE001A4E97 /* VC_Commissions.swift */,
 				5B344826270EF9A20080B33B /* Cell_Commissions.swift */,
 				5B34482C270F00C60080B33B /* Cell_Appointment.swift */,
+				5B344834270F3F660080B33B /* Cell_Quote.swift */,
 				5B292997270DF206001A4E97 /* LaunchScreen.storyboard */,
 				5B292992270DF204001A4E97 /* Main.storyboard */,
 				5B292995270DF206001A4E97 /* Assets.xcassets */,
@@ -178,8 +184,10 @@
 				5B344827270EF9A20080B33B /* Cell_Commissions.swift in Sources */,
 				5B34482B270EFF8F0080B33B /* O_Appointment.swift in Sources */,
 				5B29298D270DF204001A4E97 /* AppDelegate.swift in Sources */,
+				5B344833270F3F2E0080B33B /* O_Quote.swift in Sources */,
+				5B344835270F3F660080B33B /* Cell_Quote.swift in Sources */,
 				5B2929C5270DFBC2001A4E97 /* VC_Appointments.swift in Sources */,
-				5B2929CB270DFC80001A4E97 /* VC_QuoteProposal.swift in Sources */,
+				5B2929CB270DFC80001A4E97 /* VC_Quotes.swift in Sources */,
 				5B2929C9270DFBEE001A4E97 /* VC_Commissions.swift in Sources */,
 				5B344829270EFA490080B33B /* O_Commission.swift in Sources */,
 				5B2929C1270DF880001A4E97 /* SceneDelegate.swift in Sources */,
